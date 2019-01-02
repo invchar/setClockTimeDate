@@ -23,7 +23,7 @@ def updateClock(clock):
 		log(message="setClockTimeDate.py: Clock {} has been updated".format(clock))
 		return 0
 	except Exception as e:
-		log(LOG_ERR, "setClockTimeDate.py: Failed to update clock")
+		log(LOG_ERR, "setClockTimeDate.py: Failed to update clock at ".format(clock))
 		log(LOG_ERR, str(e))
 		return 1
 
